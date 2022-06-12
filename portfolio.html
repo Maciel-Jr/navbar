@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <section class="cabeçalho">
+            <div logo>
+                <img src="Assets/Logo.svg">
+            </div>
+            
+             <div class="meio">
+                
+                <a onmouseenter="balao()" onmouseleave="sair_balao()" href="#">Products</a>
+                <a href="#">Challenges</a>
+                <a href="#">Resources</a>
+                s<a href="#">Other Links</a>
+                    
+            </div>
+            <div class="botoes">
+                <button style="border: none;background-color: rgba(0, 0, 0, 0);color: rgb(157,153,156);">Sign in</button>
+                <button style="background-color: rgb(19, 52, 22); color: white;margin-left: 30px;padding: 12px 20px; border: none; border-radius: 3px;">Try for free</button>
+            </div>
+            <div class="menu_mobile">
+                <button onclick="puxar()"><img class="incone" src="Assets/Menu.svg"></button>
+            </div>    
+        </section>
+        <section class="menu_mobile_links">
+            <ul>
+                <li><a style="color: rgb(157,153,156);" onmouseenter="balao()"href="#">Products</a></li>
+                <li><a href="#">Challenges</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Other Links</a></li>
+            </ul>       
+        </section>
+        <section id="balao">
+            
+            
+            
+        </section>
+    </nav>
+</header>
+
+<main class="centro">
+    <div class="palavras">
+        <div class="titulo">
+            <h2 >Ondeck is your remote</h2> <br>
+            <h2 style="color: rgb(247, 179, 1);">conference calling tool</h2><br>
+        </div>
+        <div class="texto">
+            <p style="color: rgb(157,153,156);">Ondeck is a service that allows you to creat beautiful, online, and encrypted video calls for you and your remote team.</p><br>
+        </div>
+        <div class="buton">
+            <button style="background-color: rgb(19, 52, 22); color: white;padding: 12px 20px; border: none; border-radius: 3px; margin-bottom: 15px">Try for free</button>
+        </div>
+        <div class="reviews">
+            <p style="color: rgb(157,153,156);">5.0 Rating based on reviews from: </p>
+            <img src="Assets/Capterra Logo.svg">
+            <img src="Assets/AlternativeTo Logo.svg">
+            <img style="width: 25px; height: 25px;" src="Assets/shopify-logo-svgrepo-com.svg">
+        </div>
+    </div>
+    <div class="hero" >
+        <img src="Assets/Hero Image.png">
+    </div>
+</main>
+
+
+
+
+
+
+<footer class="rodape">
+    <div class="texto_links">
+        <p style="color: rgb(157,153,156); text-align: center;"> Trusted by 3+ million people at companies like</p>
+    </div>
+    <div class="logos" style="text-align: center;">
+        <img src="Assets/Netflix Logo.svg">
+        <img src="Assets/Shopify Logo.svg">
+        <img src="Assets/Shopify Logo.svg">
+        <img src="Assets/Walmart Logo.svg">
+    </div>
+</footer>
+    <script src="menu.js"></script>
+</body>
+</html>

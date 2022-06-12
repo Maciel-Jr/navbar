@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: rgb(243, 237, 229);
+}
+a{
+    text-decoration: none;
+    color: rgb(157,153,156);
+}
+.cabeçalho{
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 0;
+    align-items: center;
+}
+
+.meio{
+    
+    display: flex;
+    
+   
+}
+.meio a{
+    margin-left: 40px;
+    color: rgb(157,153,156);
+    
+}
+button:hover{
+    cursor: pointer;
+}
+.menu_mobile button{
+    background-color: transparent;
+    border: none;
+    display: none;
+    right: 0;
+}
+.menu_mobile_links{  
+    margin-bottom: 5px;
+    display: none;
+    transition: 0.5s;
+}
+.menu_mobile_links ul li{
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.fechar{
+    display: none;
+}
+.abrir{
+    height: 230px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 380px;
+    top:95px;
+    border-radius: 20px;
+    display: block;
+}
+.balao_caixa{
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+}
+.abrir::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    margin-left: 90px;
+    top: -15px;
+}
+.balao_titulo{
+    display: flex;
+    align-items: center;
+}
+.texto_balao{
+    color: rgb(157,153,156);
+    margin-left: 30px;
+}
+.cima_balao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.texto_balao_cima{
+    color: rgb(157,153,156);
+    display: none;
+}
+.buton_balao_cima button{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+/* esse foi o cabeçalho */
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+.palavras{
+    
+    margin-left: 30px;
+    max-width: 650px;
+}
+.titulo h2{
+    font-weight: 000;
+    font-size: 50px;
+    
+}
+.reviews{
+    display: flex;
+    align-items: center;
+}
+.hero{
+    margin-right: 30px;
+}
+.hero img{
+    height: 350px;
+}
+.rodape{
+    margin-top: 60px;
+}
+.logos{
+    margin-top: 30px;
+}
+.logos img{
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 895px) {
+    .cabeçalho{
+        justify-content: space-between;
+    }
+   .hero{
+    display: none;
+   }
+   .meio{
+    display: none;
+   }
+   .botoes{
+    display: none;
+   }
+   .menu_mobile button{
+    display: block;
+   }
+   .open{
+    display: block;
+   }
+   .abrir{
+        height: 350px;
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        margin-left: 20%;
+        top:110px;
+        border-radius: 20px;
+        display: block;
+    }
+   .abrir::before{
+    display: none;
+   }
+   .texto_balao_cima{
+        display: block;
+    }
+    .buton_balao_cima button{
+        display: block;
+    }
+
+
+}
