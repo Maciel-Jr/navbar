@@ -48,33 +48,27 @@ button:hover{
     text-align: center;
 }
 
-.fechar{
+.balao_caixa{
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 110px;
+    left: 25%;
     display: none;
 }
-.abrir{
-    height: 230px;
-    width: 400px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    margin-left: 380px;
-    top:95px;
-    border-radius: 20px;
-    display: block;
-}
-.balao_caixa{
-    margin-top: 20px;
-    margin-left: 20px;
-    align-items: center;
-}
-.abrir::before{
+.balao_caixa::before{
     content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
     background-color: rgb(255, 255, 255);
+    height: 15px;
+    width: 15px;
+    top: -7px;
+    left: 85px;
+    position: absolute;
     transform: rotate(45deg);
-    margin-left: 90px;
-    top: -15px;
 }
 .balao_titulo{
     display: flex;
@@ -113,7 +107,7 @@ button:hover{
 }
 .titulo h2{
     font-weight: 000;
-    font-size: 50px;
+    font-size: 55px;
     
 }
 .reviews{
@@ -174,6 +168,9 @@ button:hover{
     .buton_balao_cima button{
         display: block;
     }
-
+    .balao_caixa::before{
+        display: none;
+    }
+    
 
 }
